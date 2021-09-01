@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --primary-color: teal;
+    --secondary-color: black;
+    --tertiary-color: white;
+}
+header {
+    padding: 20px 35px;
+    top: 0;
+    position: -webkit-sticky;
+    background-size: cover;
+    background-position: 80%;
+    background-attachment: fixed;
+    background-color: var(--primary-color);
+    text-align: center;
+    border-bottom: 3px solid black;
+
+}
+header nav ul {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    font-size: 34px;
+}
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.35vw;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.5);
+}
+header h2{
+    font-weight:bold;
+    font-size:26px;
+    font-style:italic;
+}
+h1{
+    font-weight: bold;
+    font-size: 36px;
+    margin: 0;
+}
+info{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none
+}
+section{
+    border-bottom:  3px solid black;
+    margin: 0 auto;
+}
+section h1 {
+    font-style: italic;
+    font-weight: bold;
+    font-size: 26px;
+}
+.section-title {
+    font-size: 30px;
+    color:var(--secondary-color);
+    border-bottom: 3px solid;
+    border-color: var(--tertiary-color);
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 0 auto 35px auto;
+    width: 50%;
+    text-align: center;
+}
+h3{
+    font-size:15px;
+    text-align:center;
+    padding-bottom:10px;
+    margin:0 auto 35px auto;
+}
+h2{
+    font-size:15px;
+    text-align:center;
+    padding-bottom:10px;
+    margin:0 auto 35px auto;
+}
+img{
+    /* width: 500px;
+    border-radius: 20px; */
+    -webkit-transition: all 0.3s ease;  
+    border-radius: 5px;  
+    border: black ;  
+    border-style: solid;  
+    border-width: 1px;  
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: auto;
+
+}
+.pfp{
+    border-width:1px;
+    align-items: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: 500px;
+}
+img:hover{
+    filter: blur(1px);  
+    transition: 0.3s ease;  
+    box-shadow: 0 3px 20px #C4C8F1;
+}
+h4{
+    font-size:12px;
+    text-align:center;
+    padding-bottom:20px;
+    margin:0 auto 35px auto;
+}

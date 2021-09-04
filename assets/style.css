@@ -18,6 +18,7 @@ header {
     background-color: var(--primary-color);
     text-align: center;
     border-bottom: 3px solid black;
+    
 
 }
 header nav ul {
@@ -52,7 +53,7 @@ info{
     list-style: none
 }
 section{
-    border-bottom:  3px solid black;
+    
     margin: 0 auto;
 }
 section h1 {
@@ -63,7 +64,6 @@ section h1 {
 .section-title {
     font-size: 30px;
     color:var(--secondary-color);
-    border-bottom: 3px solid;
     border-color: var(--tertiary-color);
     padding-bottom: 20px;
     text-align: center;
@@ -72,7 +72,7 @@ section h1 {
     text-align: center;
 }
 h3{
-    font-size:15px;
+    font-size:20px;
     text-align:center;
     padding-bottom:10px;
     margin:0 auto 35px auto;
@@ -106,6 +106,7 @@ img{
     margin-right: auto;
     width: 300px;
     height: 500px;
+    margin-bottom:  50px;
 }
 img:hover{
     filter: blur(1px);  
@@ -113,8 +114,94 @@ img:hover{
     box-shadow: 0 3px 20px #C4C8F1;
 }
 h4{
-    font-size:12px;
+    font: size 16px;
     text-align:center;
     padding-bottom:20px;
     margin:0 auto 35px auto;
+}
+hr{
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+@media screen and (max-width: 980px) {
+    .header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
+    .header h1{
+        width: 100%;
+        text-align:center;
+    }
+    .header nav ul li a {
+        font-size:20px;
+    }
+    .footer h2, footer div {
+        text-align: center;
+        width: 100%;
+    }
+    .hero-cta, .hero-form {
+        width: 100%;
+    }
+    .hero-cta {
+        text-align: center;
+    }
+    .section-title{
+        width: 80%;
+    }
+    .trainer {
+        flex: 0 70%;
+    }
+    .contact-info iframe {
+        flex: 1 100%;
+    }
+}
+@media screen and (max-width: 768px) {
+    section {
+        padding: 30px 15p;
+    }
+    .steps h3 {
+        flex: 1 100%;
+        text-align: center;
+    }
+    .step-info {
+        flex: 2 100%;
+        text-align: center;
+        justify-content: center;
+    }
+    .step-img {
+        flex: 0 32%;
+        margin-right: 0;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .step-text {
+        flex: 100%;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    header h1 {
+    }
+    .hero-form button {
+        width: 100%;
+    }
+    .section-title {
+        width: 95%;
+    }
+    .intro p {
+        width: 100%;
+    }
+    .trainer {
+        flex:0 100%;
+    }
+    .contact-info {
+        text-align:center;
+    }
+    .contact-info > * {
+        flex: 0 100%;
+    }
+    .contact-form {
+        order:3;
+    }
 }
